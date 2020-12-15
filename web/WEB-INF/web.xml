@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ControllerAdministrador</servlet-name>
+        <servlet-class>controlador.ControllerAdministrador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogeo</servlet-name>
+        <servlet-class>controlador.ControllerLogeo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerCarrito</servlet-name>
+        <servlet-class>controlador.ControllerCarrito</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerCliente</servlet-name>
+        <servlet-class>controlador.ControllerCliente</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerAdministrador</servlet-name>
+        <url-pattern>/ControllerAdministrador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogeo</servlet-name>
+        <url-pattern>/ControllerLogeo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerCarrito</servlet-name>
+        <url-pattern>/ControllerCarrito</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerCliente</servlet-name>
+        <url-pattern>/ControllerCliente</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
